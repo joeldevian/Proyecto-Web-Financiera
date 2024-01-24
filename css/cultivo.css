@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #14111c;
+    color: #fff; /* Cambiado a blanco para mejorar la legibilidad */
+}
+
+.registro-cultivos {
+    max-width: 600px;
+    margin: 90px auto;
+    padding: 20px;
+    background-color: #1e1122;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fecc6a; /* Amarillo para destacar */
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8019e6; /* Morado para resaltar */
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2e1228; /* Granate oscuro */
+    border-radius: 5px;
+    background-color: #14111c; /* Negro */
+    color: #fff; /* Blanco para el texto en los campos de entrada */
+}
+
+.boton-registrar {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8d5cf2; /* Azul claro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c5432; /* Verde oscuro al pasar el ratón */
+}

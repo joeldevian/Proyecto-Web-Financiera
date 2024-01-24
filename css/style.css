@@ -1,0 +1,419 @@
+:root {
+    --olive_green: #3D550C;
+    --lime_green: #81B622;
+    --yellow_green: #ECF87F;
+    --green: #59981A;
+    --dark_blue: #1F3A4B;
+    --light_gray: #E8E8E8;
+    --orange: #f9a825;
+    --gradient_start: #1ed460;
+    --gradient_mid: #fecc6a;
+    --gradient_end: #8d5cf2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Merriweather', 'Teko', serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #8019e6, var(--gradient_mid), var(--gradient_end));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header__izq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 50px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.header__text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    font-size: 1.4rem;
+    
+}
+
+.header__item {
+    margin-right: 30px;
+    color: white;
+}
+
+.hheader__item i {
+    width: 80px;
+    height: 50px;
+}
+
+.header__item a {
+    text-decoration: none;
+    color: var(--light_gray);
+}
+
+
+main {
+    width: 100%;
+    height: 612px;
+    background-image: url(/financiera_web/assets/img/principal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__principal {
+    max-width: 860px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main__principal h1 {
+    margin-top: 90px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    letter-spacing: -.7px;
+    color: white;
+}
+
+.main__principal p {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1.6rem;
+    line-height: 2.0;
+    color: white;
+}
+
+/* Botón de inicio de sesión */
+.main__button {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: calc((100% - 800px) / 2);
+    padding: .8em 2.6em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: black;
+    background-color: var(--orange);
+    transition: all .3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.main__button:hover {
+    background-color: var(--yellow_green);
+    color: black;
+}
+
+
+.header__item a:hover {
+    color: crimson;
+}
+
+/*========================================================================*/
+/*            Responsive Design                                           */
+/*========================================================================*/
+@media screen and (max-width: 1024px) {
+    /* Contenedor principal */
+}
+
+/*========================================================================*/
+/*              Small devices (tablets and down)                          */
+/*========================================================================*/
+@media screen and (max-device-width: 768px) and (-webkit){
+    .container{
+        width: auto !important;
+    }
+}
+
+
+/*========================================================================*/
+/*              Mobile devices (portrait)                                 */
+/*========================================================================*/
+@media only screen and (min-device-width : 320px) and (max-device-heith: 400px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/*========================================================================*/
+/*                                 Login                                  */
+/*========================================================================*/
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9a825;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #b3781b;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-image {
+    background-image: url(../assets/img/login_img.jpg);
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*========================================================================*/
+/*                          Pagina de Registro                            */
+/*========================================================================*/
+
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background-color: #13161c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+}
+
+.sidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar  #btn {
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 28px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+}
+
+.sidebar ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    font-size: 18px;
+    background: #1d1b31;
+    color: #fff;
+}
+
+.sidebar ul li .bx-search {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+    
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.sidebar ul li a:hover {
+    color: #11101d;
+    background-color: #fff;
+}
+
+.sidebar ul li i {
+    width: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sidebar .profile_content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: #1d1b31;
+}
+
+.profile_content .profile .profile_details {
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_job {
+    margin-left: 10px;
+}
+
+.profile .profile_details .name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job {
+    font-size: 12px;
+}
+
+.profile #log_out {
+    position: absolute;
+    left: 88%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    border-radius: 12px;
+}
+
+.home_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.home_content .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+}
+
+.home_content {
+    background-color: #333639;
+    background-image: url(../assets/img/img_registro.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_content .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;  
+    color: black;
+    font-size: 2.8rem;
+}

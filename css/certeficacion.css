@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #333333); /* Cambiado a una combinación de tonos grises oscuros */
+    color: #fff;
+}
+
+.certificacion {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #333333, #555555); /* Cambiado a una combinación de grises más oscuros para el formulario */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc; /* Cambiado a un tono más claro para las etiquetas */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666; /* Cambiado a un tono más oscuro para el borde de los campos de entrada */
+    border-radius: 5px;
+    color: #333; /* Cambiado a un tono más oscuro para el texto de los campos de entrada */
+    background: #fff; /* Cambiado a un fondo blanco para los campos de entrada */
+}
+
+.boton-generar-certificado {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #8019e6, #14111c); /* Combinación de colores para el botón similar a los primeros diseños */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #8019e6, #14111c);
+}

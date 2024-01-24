@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/certeficacion.css">
+    <title>Certificación - Cooperativa Frutos del Ande</title>
+</head>
+<body>
+
+  <div class="certificacion">
+    <h1>Certificación</h1>
+    
+    <form action="procesar_certificacion.php" method="post">
+        <div class="campo">
+            <label for="tipo">Tipo de Certificación:</label>
+            <input type="text" id="tipo" name="tipo" required>
+        </div>
+
+        <div class="campo">
+            <label for="fechaEmision">Fecha de Emisión:</label>
+            <input type="date" id="fechaEmision" name="fechaEmision" required>
+        </div>
+
+        <div class="campo">
+            <label for="fechaExpiracion">Fecha de Expiración:</label>
+            <input type="date" id="fechaExpiracion" name="fechaExpiracion" required>
+        </div>
+
+        <div class="campo">
+            <label for="entidadEmisora">Entidad Emisora:</label>
+            <input type="text" id="entidadEmisora" name="entidadEmisora" required>
+        </div>
+
+        <div class="campo">
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" name="nombreProducto" required>
+        </div>
+
+        <div class="campo">
+            <label for="nombreProveedor">Nombre del Proveedor:</label>
+            <input type="text" id="nombreProveedor" name="nombreProveedor" required>
+        </div>
+
+        <div class="boton-generar-certificado">
+            <button type="submit">Generar Certificado</button>
+        </div>
+    </form>
+  </div>
+
+</body>
+</html>

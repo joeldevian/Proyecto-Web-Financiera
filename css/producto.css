@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #405c63, #4e727a, #618692);
+    color: #fff;
+}
+
+.registro-productos {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #333333); 
+    box-shadow: 0 0 20px rgba(21, 34, 66, 0.8); 
+    border-radius: 8px;
+}
+
+.enlace-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 340px;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    background: #fff; /* Cambiado a un fondo blanco para los campos de entrada */
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton-registrar {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #4CAF50, #45a049); /* Combinación de colores para el botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #45a049, #3f9042); /* Cambiado a un tono más oscuro al pasar el ratón sobre el botón */
+}

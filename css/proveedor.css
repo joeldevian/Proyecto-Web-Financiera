@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1122; /* Color de fondo principal */
+    color: #fff; /* Color del texto */
+}
+
+.registro-proveedores {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #14111c; /* Color del contenedor principal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fecc6a; /* Color de resalte o acento */
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #14111c; /* Color del contenedor principal */
+    color: #fff; /* Color del texto */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton-registrar {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d80bc4; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8019e6; /* Color de resalte del botón al pasar el ratón */
+}

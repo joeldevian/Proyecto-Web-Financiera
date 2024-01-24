@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1e1122, #14111c); 
+    color: #fff;
+}
+
+.registro-pedidos {
+    max-width: 600px;
+    margin: 90px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #2e1228, #14111c); /* Fondo del contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.enlace-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 340px;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fecc6a; /* Color de resalte */
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1e1122; /* Fondo de los campos */
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton-registrar {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #d80bc4, #8019e6); /* Botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #8019e6, #d80bc4); /* Efecto hover */
+}

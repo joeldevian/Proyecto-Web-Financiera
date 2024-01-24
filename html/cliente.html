@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/cliente.css">
+    <title>Registro de Clientes - Cooperativa Frutos del Ande</title>
+</head>
+<body>
+
+    <a href="../html/main.html" class="enlace-regreso"><i class="fas fa-arrow-left"></i> Regresar</a>
+
+  <div class="registro-clientes">
+    <h1>Registro de Clientes</h1>
+    <form action="procesar_registro_cliente.php" method="post">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="campo">
+            <label for="contacto">Contacto:</label>
+            <input type="text" id="contacto" name="contacto" required>
+        </div>
+
+        <div class="campo">
+            <label for="referencia">Referencia:</label>
+            <textarea id="referencia" name="referencia" required></textarea>
+        </div>
+
+        <div class="boton-registrar-cliente">
+            <button type="submit">Registrar Cliente</button>
+        </div>
+    </form>
+  </div>
+
+</body>
+</html>

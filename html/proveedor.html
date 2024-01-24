@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_proveedores.css">
+    <title>Registro de Proveedores - Cooperativa Frutos del Ande</title>
+    <link rel="stylesheet" href="../css/proveedor.css">
+</head>
+<body>
+
+  <div class="registro-proveedores">
+    <h1>Registro de Proveedores</h1>
+    
+    <form action="procesar_proveedor.php" method="post">
+        <div class="campo">
+            <label for="nombre">Nombre del Proveedor:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="campo">
+            <label for="contacto">Contacto:</label>
+            <input type="text" id="contacto" name="contacto" required>
+        </div>
+
+        <div class="campo">
+            <label for="tipoInsumo">Tipo de Insumo:</label>
+            <input type="text" id="tipoInsumo" name="tipoInsumo" required>
+        </div>
+
+        <div class="campo">
+            <label for="terminosContrato">Términos del Contrato:</label>
+            <textarea id="terminosContrato" name="terminosContrato" required></textarea>
+        </div>
+
+        <div class="campo">
+            <label for="fechaContrato">Fecha de Contrato:</label>
+            <input type="date" id="fechaContrato" name="fechaContrato" required>
+        </div>
+
+        <div class="campo">
+            <label for="fechaFinalizacion">Fecha de Finalización de Contrato:</label>
+            <input type="date" id="fechaFinalizacion" name="fechaFinalizacion" required>
+        </div>
+
+        <div class="boton-registrar">
+            <button type="submit">Registrar Proveedor</button>
+        </div>
+    </form>
+  </div>
+
+</body>
+</html>
