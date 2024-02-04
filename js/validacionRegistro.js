@@ -11,7 +11,7 @@ function validarRegistro() {
     var errorContacto = document.getElementById('errorContacto');
     var errorReferencia = document.getElementById('errorReferencia');
 
-    // Limpiar mensajes de error
+    // Limpiar mensajes de errorww
     errorNombre.innerText = '';
     errorDireccion.innerText = '';
     errorContacto.innerText = '';

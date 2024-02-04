@@ -11,42 +11,49 @@
   <div class="certificacion">
     <h1>Certificación</h1>
     
-    <form action="procesar_certificacion.php" method="post">
+    <form method="post" onsubmit="return validarCertificacion()">
+       
         <div class="campo">
             <label for="tipo">Tipo de Certificación:</label>
             <input type="text" id="tipo" name="tipo" required>
+            <span id="errorTipo" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="fechaEmision">Fecha de Emisión:</label>
             <input type="date" id="fechaEmision" name="fechaEmision" required>
+            <span id="errorFechaEmision" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="fechaExpiracion">Fecha de Expiración:</label>
             <input type="date" id="fechaExpiracion" name="fechaExpiracion" required>
+            <span id="errorFechaExpiracion" class="mensaje-error" ></span>
         </div>
 
         <div class="campo">
             <label for="entidadEmisora">Entidad Emisora:</label>
             <input type="text" id="entidadEmisora" name="entidadEmisora" required>
+            <span  id="errorEntidadEmisora" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="nombreProducto">Nombre del Producto:</label>
             <input type="text" id="nombreProducto" name="nombreProducto" required>
+            <span id="errorNombreProducto" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="nombreProveedor">Nombre del Proveedor:</label>
             <input type="text" id="nombreProveedor" name="nombreProveedor" required>
+            <span id="errorNombreProveedor" class="mensaje-error"></span>
         </div>
-
+        
         <div class="boton-generar-certificado">
-            <button type="submit">Generar Certificado</button>
+            <button type="button" onclick="validarCertificacion()">Generar Certificado</button>
         </div>
     </form>
   </div>
-
+<script src="../js/validacionCertificacion.js"></script>
 </body>
 </html>
