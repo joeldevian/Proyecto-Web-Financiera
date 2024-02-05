@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos_pedidos.css">
     <title>Registro de Pedidos - Cooperativa Frutos del Ande</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/pedido.css">
@@ -15,20 +14,23 @@
   <div class="registro-pedidos">
     <h1>Registro de Pedidos</h1>
     
-    <form action="procesar_pedido.php" method="post">
+    <form method="post" onsubmit="return validarPedido()">
         <div class="campo">
             <label for="cliente">Cliente:</label>
             <input type="text" id="cliente" name="cliente" required>
+            <span id="errorCliente" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="fecha">Fecha de Pedido:</label>
-            <input type="date" id="fecha" name="fecha" required>
+            <input type="date" id="fechaPedido" name="fecha" required>
+            <span id="errorFechaPedido" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
             <label for="detalles">Detalles:</label>
-            <textarea id="detalles" name="detalles" required></textarea>
+            <textarea id="detallesPedido" name="detalles" required></textarea>
+            <span id="errorDetallePedido" class="mensaje-error"></span>
         </div>
 
         <div class="campo">
@@ -38,13 +40,14 @@
                 <option value="en_proceso">En Proceso</option>
                 <option value="entregado">Entregado</option>
             </select>
+            <span id="errorEstadoPedido" class="mensaje-error"></span>
         </div>
 
         <div class="boton-registrar">
-            <button type="submit">Registrar Pedido</button>
+            <button type="button" onclick="validarPedido()">Registrar Pedido</button>
         </div>
     </form>
   </div>
-
+<script src="../js/validacionPedido.js"></script>
 </body>
 </html>
