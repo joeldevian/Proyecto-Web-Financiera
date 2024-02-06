@@ -11,14 +11,21 @@
     <section class="login-container">
         <div class="login-form">
             <h2>Iniciar Sesión</h2>
-            <form action="./main.html" target="_blank">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
+            <form action="./main.html"  method="post" onsubmit="return validarLogin()">
+                <div class="campo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                    <span id="errorUsuario" class="mensaje-error"></span>
+                </div>
                 
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-                
-                <button type="submit" >Iniciar Sesión</button>
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    <span id="errorContrasena" class="mensaje-error"></span>
+                </div>
+                <div class="boton-registrar">
+                    <button type="button" onclick="validarLogin()" >Iniciar Sesión</button>
+                </div>
 
                 <p><a href="#">Olvidaste tu contraseña</a></p>            
             </form>
@@ -31,5 +38,6 @@
             <!-- <img src="ruta_de_tu_foto.jpg" alt="Foto de la página de inicio de sesión"> -->
         </div>
     </section>
+<script src="../js/validarLogin.js"></script>
 </body>
 </html>
