@@ -23,6 +23,7 @@ function validarLogin(){
     // Si la validación pasa, podrías enviar los datos al servidor o redirigir a otra página
     //alert('Inicio de sesión exitoso'); // Solo para ejemplo, puedes cambiar esto según tus necesidades
     return true;
+    
 
 }
 
