@@ -1,29 +1,30 @@
 // validarLogin()
 
-function validarLogin(){
+function validarLogin() {
     var usuario = document.getElementById("usuario").value;
     var contrasena = document.getElementById("contrasena").value;
 
     var errorUsuario = document.getElementById("errorUsuario");
     var errorContrasena = document.getElementById("errorContrasena");
 
-    // limpiar mesaje error
+    // limpiar mensaje de error
     errorUsuario.innerText = '';
-    errorContrasena.innerText= '';
+    errorContrasena.innerText = '';
 
-    // Validar credenciales (ejemplo: usuario 'admin', contraseña '123456')
+    // Validar credenciales
     if (usuario !== 'admin') {
         errorUsuario.innerText = 'Usuario incorrecto. Por favor, inténtelo de nuevo.';
         return false;
     }
     if (contrasena !== '123456') {
-        errorContrasena.innerText = 'contraseña incorrecto. Por favor, inténtelo de nuevo.';
+        errorContrasena.innerText = 'Contraseña incorrecta. Por favor, inténtelo de nuevo.';
         return false;
     }
-    // Si la validación pasa, podrías enviar los datos al servidor o redirigir a otra página
-    //alert('Inicio de sesión exitoso'); // Solo para ejemplo, puedes cambiar esto según tus necesidades
-    return true;
 
+    // Redirigir a la página principal
+    window.location.href = "./main.html";
+
+    return true; // No es necesario en este punto, pero puedes mantenerlo si lo deseas
 }
 
 
