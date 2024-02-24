@@ -11,7 +11,7 @@
     <section class="login-container">
         <div class="login-form">
             <h2>Iniciar Sesión</h2>
-            <form action="./main.html"  method="post" onsubmit="return validarLogin()">
+            <form action="./main.php"  method="post" onsubmit="return validarLogin()">
                 <div class="campo">
                     <label for="usuario">Usuario:</label>
                     <input type="text" id="usuario" name="usuario" required>
