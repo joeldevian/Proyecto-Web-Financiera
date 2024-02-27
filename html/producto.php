@@ -39,11 +39,14 @@
             <span  id="errorDescripcion" class="mensaje-error"></span>
         </div>
 
-        <div class="boton-registrar">
-            <button type="button" onclick="validarProducto()">Registrar Producto</button>
+        <div >
+            <button type="submit" name="registrarproducto">Registrar Producto</button>
         </div>
     </form>
   </div>
 <script src="../js/validacionProducto.js"></script>
+<?php 
+    include("../php/registrarProducto.php");
+  ?>
 </body>
 </html>

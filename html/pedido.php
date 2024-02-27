@@ -43,11 +43,14 @@
             <span id="errorEstadoPedido" class="mensaje-error"></span>
         </div>
 
-        <div class="boton-registrar">
-            <button type="button" onclick="validarPedido()">Registrar Pedido</button>
+        <div >
+            <button type="submit" name="registrarpedido">Registrar Pedido</button>
         </div>
     </form>
   </div>
 <script src="../js/validacionPedido.js"></script>
+<?php 
+    include("../php/registrarPedido.php");
+  ?>
 </body>
 </html>

@@ -54,11 +54,14 @@
             <span id="errorFechaFinalizacion" class="mensaje-error" ></span>
         </div>
 
-        <div class="boton-registrar">
-            <button type="button" onclick="validarProveedor()">Registrar Proveedor</button>
+        <div >
+            <button type="submit" name ="registrarproveedor">Registrar Proveedor</button>
         </div>
     </form>
   </div>
 <script src="../js/validacionProveedor.js"></script>
+<?php 
+    include("../php/registrarProveedor.php");
+  ?>
 </body>
 </html>

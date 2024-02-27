@@ -14,7 +14,7 @@
 
   <div class="registro-clientes">
     <h1>Registro de Clientes</h1>
-    <form  id="miFormulario" action="../php/procesar_registro_cliente.php" method="post" onsubmit="return validarRegistro()">
+    <form  id="miFormulario" method="post" onsubmit="return validarRegistro()">
         <div class="campo">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -40,12 +40,15 @@
             <span id="errorReferencia" class="error"></span>
         </div>
 
-        <div class="boton-registrar-cliente">
-            <button type="button" onclick="validarRegistro()">Registrar Cliente</button>
+        <div >
+            <button type="submit" name="registrarcliente">Registrar Cliente</button>
         </div>   
     </form>
   </div>
   <script src="../js/validacionRegistro.js" ></script>
+  <?php 
+    include("../php/registrarCliente.php");
+  ?>
 </body>
 </html>
 
