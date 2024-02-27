@@ -49,11 +49,14 @@
             <span id="errorNombreProveedor" class="mensaje-error"></span>
         </div>
         
-        <div class="boton-generar-certificado">
-            <button type="button" onclick="validarCertificacion()">Generar Certificado</button>
+        <div >
+            <button type="submit" name="generarcertificado">Generar Certificado</button>
         </div>
     </form>
   </div>
 <script src="../js/validacionCertificacion.js"></script>
+<?php 
+    include("../php/registrarCertificado.php");
+  ?>
 </body>
 </html>
