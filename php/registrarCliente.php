@@ -1,8 +1,7 @@
 <?php
     include("../conexion/conectar.php");
-    var_dump($_POST);
+    
     if (isset($_POST['registrarcliente'])){ 
-        echo "Formulario recibido correctamente";
         if(
             strlen($_POST['nombre']) >= 1 &&
             strlen($_POST['direccion']) >= 1 &&
@@ -19,9 +18,8 @@
                 ";
             $resultado = mysqli_query($conex, $consulta);
             if($resultado){
-                echo "Consulta ejecutada correctamente";
                 ?>
-                <h3 class = "success"> Tu registro es a completado </h3>
+                <h3 class = "success"> Tu registro está completado </h3>
                 <?php
             }else{
                 ?>
